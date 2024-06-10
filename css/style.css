@@ -1,0 +1,142 @@
+@font-face {
+    font-family: fontLogo;
+    src: url(../fonts/Takota.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fica dentro da borda da caixa */
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh; /* Ocupa o espaço de toda a tela */
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+
+header {
+    padding: 40px 6%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .logo a {
+    display: flex;
+    font-family: fontLogo;
+    color: #fff;
+    font-size: 6vh;
+    align-items: center;
+    gap: 16px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 2vh;
+    background-color: #1c91b6ff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #0067c9ff; /* vertical, horizontal, espalhamento, cor */
+}
+
+
+
+
+
+section.topo-do-site {
+    padding: 40px 6%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 25vh;
+}
+
+section.topo-do-site .txt-topo-site h1 {
+    font-size: 6vh;
+    line-height: 40px;
+}
+
+section.topo-do-site span {
+    color: #1c91b6ff;
+}
+
+section.topo-do-site p {
+    margin: 20px 0;
+}
+
+section.topo-do-site .btn-contato button {
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 2vh;
+    background-color: #1c91b6ff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+
+section.topo-do-site .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #0067c9ff; /* vertical, horizontal, espalhamento, cor */
+    transform: scale(1.05);
+}
+
+section.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
